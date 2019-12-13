@@ -35,6 +35,18 @@ $(document).ready(function () {
         retry.innerHTML = "Retry";
         spot.append(retry);
 
+        localStorage.setItem(name, totalScore);
+
+        var list = document.createElement("ul");
+        spot.append(list);
+        var listItem = document.createElement("li");
+        list.appendChild(listItem);
+
+        for (let i = 0; i < localStorage.length; i++) {
+            const storageName = localStorage.getItem(name);
+            listItem.innerHTML = "HIGHSCORE - " + storageName;
+        }
+
         $(retry).on("click", function () {
             window.location.reload();
         });
