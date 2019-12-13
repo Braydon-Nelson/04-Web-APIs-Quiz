@@ -14,7 +14,7 @@ Quiz Page:
 
 ### Problem
 
-Currently ... Working with everything but the bonus content (Add audio files to alert the user of correct or incorrect answers. Be sure to include the appropriate license. Customize the application theme. Create multiple quizzes and an option for users to choose between them. Add the application to your portfolio.)
+Currently the highscore doesn't fit well on the page and doesn't go through the whole list of thing in the local storage.
 
 ### Solution
 
