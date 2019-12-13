@@ -3,7 +3,7 @@ $(document).ready(function () {
     var timer = document.querySelector("#timer");
     var spot = document.querySelector("#spot");
     var countDown;
-    var timeLeft = 0;
+    var timeLeft = 100;
     var totalScore = 100;
 
     for (let i = 0; i < questionArray.length; i++) {
@@ -39,8 +39,6 @@ $(document).ready(function () {
         spot.append(scoreSpot);
     }
     function timerCount() {
-        timeLeft = 100;
-        var counter = timer;
 
         countDown = setInterval(countdown, 1000);
 
@@ -50,8 +48,8 @@ $(document).ready(function () {
                 alert("TIMES UP!!!");
                 submitQuiz();
             } else {
-                counter.innerHTML = timeLeft + ' seconds remaining';
-                console.log(timeleft);
+                timer.innerHTML = timeLeft + ' seconds remaining';
+                console.log(timeLeft);
                 timeLeft--;
                 totalScore--;
             }
@@ -107,9 +105,9 @@ $(document).ready(function () {
                 } else if (userChoice != this.dataset.answer) {
                     this.setAttribute("style", "background-color: red");
                     console.log("liaushdfiouashfgiouysdhbfiguyhsdioruyfhosiurf")
-                    timeLeft - 20;
+                    timeLeft += -20;
                     console.log(timeLeft);
-                    totalScore - 20;
+                    totalScore += -20;
                     console.log(totalScore);
                 }
                 $(spot).empty();
