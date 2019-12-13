@@ -7,7 +7,7 @@ The purpose of this application is to show my skills with what I have learned th
 ### Gallery
 
 Start Page:
-![Start Page](./assets/start-view.jpg "Start Page")
+![Start Page](./assets/start-page.jpg"Start Page")
 
 Quiz Page:
 ![Quiz Page](./assets/quiz-view.jpg "Quiz Page")
@@ -44,4 +44,4 @@ All you need to know is that you can implement your own quiz based on the questi
 
 Link to example readme:
 
-https://github.com/IzzleNizzle/ReadoutAssistant
+https://braydon-nelson.github.io/04-Web-APIs-Quiz/
