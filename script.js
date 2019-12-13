@@ -17,15 +17,6 @@ $(document).ready(function () {
         timerCount();
         nextQuestion();
 
-        var retry = document.createElement("button");
-        retry.setAttribute("type", "button");
-        retry.setAttribute("class", "btn btn-primary btn-lg ml-4");
-        retry.innerHTML = "Retry";
-        spot.append(retry);
-
-        $(retry).on("click", function () {
-            window.location.reload();
-        });
 
     });
 
@@ -37,6 +28,16 @@ $(document).ready(function () {
         var name = prompt("Please input your name");
         scoreSpot.innerHTML = name + " - Score - " + totalScore;
         spot.append(scoreSpot);
+
+        var retry = document.createElement("button");
+        retry.setAttribute("type", "button");
+        retry.setAttribute("class", "btn btn-primary btn-lg ml-4");
+        retry.innerHTML = "Retry";
+        spot.append(retry);
+
+        $(retry).on("click", function () {
+            window.location.reload();
+        });
     }
     function timerCount() {
 
